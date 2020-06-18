@@ -1,0 +1,27 @@
+body { 
+  text-align: center;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  margin: 15rem 2rem;
+  cursor: pointer;
+}
+
+button.lame {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none
+  }
+  
+  button.cute {
+    all: unset
+  }
