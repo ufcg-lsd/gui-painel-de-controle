@@ -1,0 +1,38 @@
+.container-body {
+  display: flex;
+}
+
+.container-list {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 25px 25px;
+  max-width: 300px;
+  width: 100%;
+  max-height: 100%;
+  background-color: lavender;
+}
+
+.title-list {
+  text-align: center;
+}
+
+ul.list {
+  margin-top: 20px;
+  margin-left: 10px;
+  list-style: none;
+}
+
+ul.list li:not(:first-child) {
+  margin-top: 15px;
+}
+
+ul.list li a {
+  text-decoration: none;
+  padding: 20px;
+  color: blue;
+}
+
+ul.list li a:hover {
+  font-style: italic;
+  color: black;
+}

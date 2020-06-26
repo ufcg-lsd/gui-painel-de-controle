@@ -1,9 +1,15 @@
 import React from 'react';
 
+import Header from './components/Header';
+import List from './components/List';
+
+import './global.css';
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header />
+      <List />
     </div>
   );
 }
