@@ -1,67 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './styles.css';
 
 import TablePanel from '../TablePanel';
 
 const List = () => {
+
+  const [name, setName] = useState('');
+
+  function getName(event) {
+    setName(event.target.id);
+  }
+
   return (
     <div className="container-body">
       <div className="container-list">
         <h2 className="title-list">Tabelas</h2>
         <ul className="list">
           <li>
-            <a href="#">Aluno</a>
+            <button id="Aluno" onClick={getName}>Aluno</button>
           </li>
           <li>
-            <a href="#">AlunoDeficiencia</a>
+            <button id="AlunoDeficiencia" onClick={getName}>AlunoDeficiencia</button>
           </li>
           <li>
-            <a href="#">AlunoVinculo</a>
+            <button id="AlunoVinculo" onClick={getName}>AlunoVinculo</button>
           </li>
           <li>
-            <a href="#">Cota</a>
+            <button id="Cota" onClick={getName}>Cota</button>
           </li>
           <li>
-            <a href="#">Curso</a>
+            <button id="Curso" onClick={getName}>Curso</button>
           </li>
           <li>
-            <a href="#">Deficiencia</a>
+            <button id="Deficiencia" onClick={getName}>Deficiencia</button>
           </li>
           <li>
-            <a href="#">Escola</a>
+            <button id="Escola" onClick={getName}>Escola</button>
           </li>
           <li>
-            <a href="#">EstadoCivil</a>
+            <button id="EstadoCivil" onClick={getName}>EstadoCivil</button>
           </li>
           <li>
-            <a href="#">Ingresso</a>
+            <button id="Ingresso" onClick={getName}>Ingresso</button>
           </li>
           <li>
-            <a href="#">Municipio</a>
+            <button id="Municipio" onClick={getName}>Municipio</button>
           </li>
           <li>
-            <a href="#">Nacionalidade</a>
+            <button id="Nacionalidade" onClick={getName}>Nacionalidade</button>
           </li>
           <li>
-            <a href="#">PaisOrigem</a>
+            <button id="PaisOrigem" onClick={getName}>PaisOrigem</button>
           </li>
           <li>
-            <a href="#">Raca</a>
+            <button id="Raca" onClick={getName}>Raca</button>
           </li>
           <li>
-            <a href="#">Sexo</a>
+            <button id="Sexo" onClick={getName}>Sexo</button>
           </li>
           <li>
-            <a href="#">SituacaoAluno</a>
+            <button id="SituacaoAluno" onClick={getName}>SituacaoAluno</button>
           </li>
           <li>
-            <a href="#">SituacaoVinculo</a>
+            <button id="SituacaoVinculo" onClick={getName}>SituacaoVinculo</button>
           </li>
         </ul>
       </div>
       <div className="container-panel">
-        <TablePanel />
+        <TablePanel tableName={ name } />
       </div>
     </div>
   )

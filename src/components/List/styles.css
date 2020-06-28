@@ -26,13 +26,18 @@ ul.list li:not(:first-child) {
   margin-top: 15px;
 }
 
-ul.list li a {
-  text-decoration: none;
-  padding: 20px;
-  color: blue;
+ul.list li button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #00f;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
 }
 
-ul.list li a:hover {
+ul.list li button:hover {
   font-style: italic;
   color: black;
+  text-decoration: underline;
 }

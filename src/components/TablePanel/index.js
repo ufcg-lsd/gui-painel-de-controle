@@ -2,10 +2,10 @@ import React from 'react';
 
 import './styles.css';
 
-const TablePanel = () => {
+const TablePanel = (props) => {
   return (
     <div className="container-tablepanel">
-      <h2 className="title-panel">Aluno</h2>
+      <h2 className="title-panel">{ props.tableName }</h2>
       <table>
         <tr>
           <th>Campo1</th>
