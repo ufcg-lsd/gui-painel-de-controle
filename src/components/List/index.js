@@ -42,6 +42,9 @@ const List = () => {
             <button id="EstadoCivil" onClick={getName}>EstadoCivil</button>
           </li>
           <li>
+            <button id="Genero" onClick={getName}>Genero</button>
+          </li>
+          <li>
             <button id="Ingresso" onClick={getName}>Ingresso</button>
           </li>
           <li>
@@ -55,9 +58,6 @@ const List = () => {
           </li>
           <li>
             <button id="Raca" onClick={getName}>Raca</button>
-          </li>
-          <li>
-            <button id="Sexo" onClick={getName}>Sexo</button>
           </li>
           <li>
             <button id="SituacaoAluno" onClick={getName}>SituacaoAluno</button>
